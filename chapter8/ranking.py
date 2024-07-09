@@ -38,6 +38,7 @@ class BST:
         if node is None:
             return
         self.find_rank(node.left, data)
+        print(node.data)
         if node.data > data:
             rank -= 1
         self.find_rank(node.right, data)

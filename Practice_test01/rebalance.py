@@ -28,11 +28,8 @@ class BST:
                     return
                 root = root.right
 
-    def LeftRotation(node):
-        if node.right is not None:
-            nR = node.right
-            node.right = nR
-            nR.left = node
+    def LeftRotation(x):
+        y = 
 
 
     def printTree(self, node, level = 0):

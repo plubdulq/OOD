@@ -154,35 +154,6 @@ def printTree90(node, level = 0):
 
         printTree90(node.left, level + 1)
 
-
-
-# def check_binary_search_tree_(root, stack = [], idx = 0, count = 0):
-#     if count == len(data):
-#         return True
-#     if root is not None:
-#         if root.data > 100 or root.data < 0:
-#             return False
-#         if count == 0:
-#             stack.append(root)
-#         head = stack[count]
-        
-#         if head.left is not None:
-#             if head.left.data > 100 or head.left.data < 0:
-#                 return False
-#             if head.data <= head.left.data :
-#                 return False
-#             idx += 1
-#             stack.append(head.left)
-
-#         if head.right is not None:
-#             if head.right.data > 100 or head.right.data < 0:
-#                 return False
-#             if head.data >= head.right.data :
-#                 return False
-#             idx += 1
-#             stack.append(head.right)
-        
-#         return check_binary_search_tree_(head, stack, idx, count+1)
     
 def check_binary_search_tree_(root, stack = []):
     if root is not None:
@@ -198,7 +169,7 @@ def check_binary_search_tree_(root, stack = []):
                         return
             print('True')
         check_binary_search_tree_(root.right,stack)
-        
+
 
 tree = Tree()
 
